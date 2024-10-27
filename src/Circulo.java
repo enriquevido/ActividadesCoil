@@ -34,7 +34,7 @@ class Circulo extends FiguraGeometrica {
 
     @Override 
     public String toString() {
-        return "El círculo es del color: " + this.getColor() + ". ¿Está relleno?: " + this.estaRelleno() +
-                ". Su área: " + this.getArea() + ", perímetro: " + this.getPerimetro() + " y diametro: " + this.getDiametro();
+        return ("El círculo es del color: " + this.getColor() + ". ¿Está relleno?: " + this.estaRelleno() +
+                ". Su área: " + this.getArea() + ", perímetro: " + this.getPerimetro() + " y diametro: " + this.getDiametro() + ".");
     }
 }

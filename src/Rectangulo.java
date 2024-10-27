@@ -42,7 +42,7 @@ class Rectangulo extends FiguraGeometrica{
 
     public String toString(){
         return ("El rectángulo es del color: " + this.getColor() + ". ¿Está relleno?: " + this.estaRelleno() +
-                ". Su área es: " + this.getArea() + " y su perimetro: " + this.getPerimetro());
+                ". Su área es: " + this.getArea() + " y su perimetro: " + this.getPerimetro() + ".");
     }
 
 

@@ -36,7 +36,7 @@ public class Triangulo extends FiguraGeometrica{
 
     @Override
     public String toString() {
-        return "El triángulo es del color: " + this.getColor() + ". ¿Está relleno?: " + this.estaRelleno() +
-                ". Su área es: " + this.getArea() + " y su perimetro: " + this.getPerimetro();
+        return ("El triángulo es del color: " + this.getColor() + ". ¿Está relleno?: " + this.estaRelleno() +
+                ". Su área es: " + this.getArea() + " y su perimetro: " + this.getPerimetro() + ".");
     }
 }
