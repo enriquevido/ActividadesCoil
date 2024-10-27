@@ -1,4 +1,4 @@
-public class Rectangulo extends FiguraGeometrica{
+class Rectangulo extends FiguraGeometrica{
 
     private double base;
     private double altura;
@@ -11,10 +11,9 @@ public class Rectangulo extends FiguraGeometrica{
     }
 
     Rectangulo(double base, double altura, String color, boolean relleno){
+        super(color, relleno);
         this.base = base;
         this.altura = altura;
-        setColor(color);
-        setRelleno(relleno);
     }
 
     public double getBase() {
@@ -42,8 +41,8 @@ public class Rectangulo extends FiguraGeometrica{
     }
 
     public String toString(){
-        return ("Base: " + this.base + ". Altura: " + this.altura + ". Area: "
-                + this.getArea() + ". Perimetro: " + this.getPerimetro());
+        return ("El rectángulo es del color: " + this.getColor() + ". ¿Está relleno?: " + this.estaRelleno() +
+                ". Su área es: " + this.getArea() + " y su perimetro: " + this.getPerimetro());
     }
 
 

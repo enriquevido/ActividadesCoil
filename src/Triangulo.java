@@ -6,7 +6,8 @@ public class Triangulo extends FiguraGeometrica{
 
     Triangulo(){}
 
-    Triangulo(double lado1, double lado2, double lado3){
+    Triangulo(double lado1, double lado2, double lado3, String color, boolean relleno){
+        super(color, relleno);
         this.lado1 = lado1;
         this.lado2 = lado2;
         this.lado3 = lado3;
@@ -35,6 +36,7 @@ public class Triangulo extends FiguraGeometrica{
 
     @Override
     public String toString() {
-        return "Lado 1: " + this.lado1 + ". Lado 2: " + this.lado2 + ". Lado 3: " + this.lado3;
+        return "El triángulo es del color: " + this.getColor() + ". ¿Está relleno?: " + this.estaRelleno() +
+                ". Su área es: " + this.getArea() + " y su perimetro: " + this.getPerimetro();
     }
 }

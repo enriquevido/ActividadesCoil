@@ -5,7 +5,9 @@ class FiguraGeometrica {
     private boolean relleno;
     private Date fechaCreacion;
 
-    FiguraGeometrica(){}
+    FiguraGeometrica(){
+        this.fechaCreacion = new Date();
+    }
 
     FiguraGeometrica(String color, boolean relleno) {
         this.color = color;
